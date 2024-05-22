@@ -9,7 +9,9 @@
           <b-navbar-toggle target="nav-collapse" />
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <!-- <b-nav-item to="/">Example</b-nav-item> -->
+              <b-nav-item to="/pedidos/novo">
+                Novo pedido
+              </b-nav-item>
               <b-nav-item-dropdown text="Tipos de produto" right>
                 <b-dropdown-item to="/tipos/listagem">
                   Listar
