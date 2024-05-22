@@ -31,11 +31,9 @@
         </div>
       </b-navbar>
     </header>
-
     <main class="flex-shrink-0 py-5">
       <nuxt class="container" />
     </main>
-
     <footer class="mt-auto py-3 small bg-dark text-secondary">
       <div class="container">
         <p class="m-0">
@@ -48,16 +46,16 @@
 
 <script lang="ts">
 export default {
-  mounted() {
-    const nuxtDiv = document.getElementById('__nuxt');
-    const layoutDiv = document.getElementById('__layout');
+  mounted () {
+    const nuxtDiv = document.getElementById('__nuxt')
+    const layoutDiv = document.getElementById('__layout')
 
     if (nuxtDiv) {
-      nuxtDiv.classList.add('h-100');
+      nuxtDiv.classList.add('h-100')
     }
 
     if (layoutDiv) {
-      layoutDiv.classList.add('h-100');
+      layoutDiv.classList.add('h-100')
     }
   }
 }

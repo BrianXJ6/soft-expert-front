@@ -49,7 +49,8 @@ export default {
       const resp = await this.$axios.get('api/tipos')
       this.productTypes = [
         ...this.productTypes,
-        ...resp.data.data.map(item => ({ text: item.type, value: item.id }))
+        ...resp.data.data.map((item: { type: string; id: number }) => ({ text: item.type, value: item.id }))
+
       ]
     },
     async store () {
