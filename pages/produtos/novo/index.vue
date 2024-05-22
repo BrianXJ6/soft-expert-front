@@ -21,7 +21,8 @@
         v-model="form.value"
         type="number"
         step=".01"
-        required />
+        required
+      />
     </b-form-group>
     <b-button type="submit" variant="primary">
       Enviar
