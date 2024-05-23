@@ -5,7 +5,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from 'vue'
+
+export default Vue.extend({
   data: () => ({
     products: [],
     fields: [
@@ -47,5 +49,5 @@ export default {
       this.products = resp.data.data
     }
   }
-}
+})
 </script>

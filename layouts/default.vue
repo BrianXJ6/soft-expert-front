@@ -47,7 +47,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from 'vue'
+
+export default Vue.extend({
   mounted () {
     const nuxtDiv = document.getElementById('__nuxt')
     const layoutDiv = document.getElementById('__layout')
@@ -60,5 +62,5 @@ export default {
       layoutDiv.classList.add('h-100')
     }
   }
-}
+})
 </script>

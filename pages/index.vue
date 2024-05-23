@@ -34,9 +34,11 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import { AxiosResponse } from 'axios'
 import { ApiResponse } from '~/interfaces/api'
-export default ({
+
+export default Vue.extend({
   data: () => ({
     orders: [] as Object[],
     fields: [

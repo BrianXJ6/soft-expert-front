@@ -46,10 +46,11 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import { Product } from '~/interfaces/products'
 import apiProducts from '~/plugins/products'
 
-export default ({
+export default Vue.extend({
   data: () => ({
     products: [] as any,
     productSelected: '' as (string | Product),

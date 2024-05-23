@@ -31,7 +31,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import Vue from 'vue'
+
+export default Vue.extend({
   data: () => ({
     form: {
       product_type_id: '',
@@ -60,5 +62,5 @@ export default {
       this.$router.push('/produtos/listagem')
     }
   }
-}
+})
 </script>
