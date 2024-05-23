@@ -17,8 +17,8 @@
               <b-collapse :id="`accordion-${i}`" accordion="my-accordion">
                 <b-card-body>
                   <b-card-text>Tipo: {{ product.type }}</b-card-text>
-                  <b-card-text>Quantidade: {{ product.unitary_value }}</b-card-text>
-                  <b-card-text>Valor do produto (un): {{ product.qtd }}</b-card-text>
+                  <b-card-text>Quantidade: {{ product.qtd }}</b-card-text>
+                  <b-card-text>Valor do produto (un): {{ product.unitary_value }}</b-card-text>
                   <b-card-text>Imposto %: {{ product.tax }}</b-card-text>
                   <b-card-text>Valor s/ imposto: {{ product.total_without_tax }}</b-card-text>
                   <b-card-text>Valor do imposto: {{ product.total_percentage }}</b-card-text>
